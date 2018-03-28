@@ -1,0 +1,72 @@
+The tracking id is for lux-services.com
+4 google analytics:
+
+Tracking ID
+UA-91400616-1
+
+Using WordPress
+To track every page on this site
+Enter this script in to
+header.php just above the wphead() call
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91400616-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+Go thru the process of signing up for google analytics to get a customized version of the above script.
+Each must be unique  The UA number is different for each site.
+
+Then get the Monsterinsights for google analytics plugin
+It used to be part of the yoast package but got sold off.
+Said to be in good hands, maintenance wise.
+gotta find out more
+
+good utube follow along lessons on setting it up.
+
+when making one's own implementation or using
+Other frameworks you might want to do it this way
+
+the word is to include it in the header of your page
+before any other CSS or JavaScripts
+
+
+For a Bootstrap or other page by page PHP Implementation
+((So one does not end up with a copy paste errors))
+create a file using custom version of above script.
+name it analyticstracking.php
+
+And call it by Adding something like the following line early in each page :
+
+<?php include_once("analyticstracking.php") ?>
+or
+less popular
+referencing it in a script tag
+
+Or
+For Dynamic Content frameworks or Implementations
+much like wordpress above
+Use a common include or template to paste the code above instead of manually adding it to every page.
+It's just that every system will have it's own best place to do that, just need to determine where.
+
+
+later in the follow along video there is a part about verifying and testing.
+use that to finish verifying and setting up Analytics.
+
+Now:
+There is something called a tag
+So far this is using one tag
+All sites need to be able to manage more than one tag
+but as of this moment Google analytics is set up.
+
+Next is to install
+
+Google Tag Manager
+
+ As soon there will be many tags to manage.
