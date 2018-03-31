@@ -1,7 +1,7 @@
 {
   "name": "aastart",
   "version": "1.0.0",
-  "description": "",
+  "description": "experiment",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/sbmiller3/aastart/issues"
   },
-  "homepage": "https://github.com/sbmiller3/aastart#readme"
+  "homepage": "https://github.com/sbmiller3/aastart#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0"
+  }
 }
